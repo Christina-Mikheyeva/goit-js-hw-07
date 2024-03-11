@@ -1,6 +1,7 @@
 
 const massiveItems = categories.querySelectorAll(".item");
 const numberCategories = massiveItems.length;
+console.log (massiveItems)
 console.log(`Number of categories: ${numberCategories}`) 
 
 massiveItems.forEach(item => { textAndNumber(item) }) 
