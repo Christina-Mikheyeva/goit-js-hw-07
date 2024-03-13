@@ -27,3 +27,5 @@ function submitAction(event) {
 
 const button = document.querySelector("button");
 button.textContent = "Log in"
+const input = document.querySelector("input");
+input.setAttribute("placeholder", "Type area");

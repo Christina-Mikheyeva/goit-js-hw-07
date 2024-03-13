@@ -12,7 +12,3 @@ input:last-child {
 button:hover {
     background-color: rgba(108, 140, 255, 1);
 }
-
-input:hover {
-    border: 1px solid rgba(0, 0, 0, 1);
-}
