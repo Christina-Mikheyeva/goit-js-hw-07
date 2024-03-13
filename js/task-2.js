@@ -29,100 +29,42 @@ const images = [
   },
 ];
 
-const playsToAdd = document.querySelector(".gallery");
+// const playsToAddLi = document.querySelector(".gallery");
 
-const elementLi0 = document.createElement("li")
-const elementLi1 = document.createElement("li")
-const elementLi2 = document.createElement("li")
+// playsToAddLi.innerHTML = "<li><img></img></li><li><img></img></li><li><img></img></li>";
 
-function createGallery (images) { 
+// const elementImg = document.querySelectorAll("img");
 
-  element[index].src = [];
-  element[index].alt = [];
-  element[index].width = "320";
-  element[index].classList.add("images-item")
-  
-  for (let index = 0; index < 3; index++) {
-  const element = images[index];
-  }
-  
-}
+// function addImages (arr) { 
 
-const elementImg0 = document.createElement("img");
-elementImg0.src = 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260';
-elementImg0.alt = 'White and Black Long Fur Cat';
-elementImg0.width = "320";
-elementImg0.classList.add("images-item")
-
-const elementImg1 = document.createElement("img");
-elementImg1.src = 'https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260';
-elementImg1.alt = 'Orange and White Koi Fish Near Yellow Koi Fish';
-elementImg1.width = "320";
-elementImg1.classList.add("images-item")
-
-const elementImg2 = document.createElement("img");
-elementImg2.src = 'https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260';
-elementImg2.alt = 'Group of Horses Running';
-elementImg2.width = "320";
-elementImg2.classList.add("images-item")
-
-playsToAdd.append(elementLi0)
-playsToAdd.append(elementLi1)
-playsToAdd.append(elementLi2)
-
-elementLi0.append(elementImg0)
-elementLi1.append(elementImg1)
-elementLi2.append(elementImg2)
-
-
-
-
-// const playsToAdd = document.querySelector(".gallery");
-
-// const createElements = element => {
-//   return [
-//     document.createElement(element),
-//     document.createElement(element),
-//     document.createElement(element)
-//   ]
+//   for (let index = 0; index < 3; index++) { 
+//     elementImg[index].classList.add("images-item"),
+//     elementImg[index].width = "320",
+//     elementImg[index].src = images[index].url,
+//     elementImg[index].alt = images[index].alt
+//   } 
 // }
 
-// const li = createElements("li");
-// playsToAdd.append(...li);
+// addImages (elementImg)
+  
 
-// const img = createElements("img");
-// li.append(img);
+// Object
 
+const gallery = {
+  search: document.querySelector(".gallery"),
+  addToHtml:
 
-// console.log(img.map(element => {li.append(element)}))
-// console.log(playsToAdd.append(...createElements("img")));
+};
 
-
-// const playsToAdd = document.querySelector(".gallery");
-// const elementLi = document.createElement("li");
-
-// const elementImg = document.createElement("img");
-// elementImg.src = 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260';
-// elementImg.alt = 'White and Black Long Fur Cat';
-// elementImg.width = "320";
-// elementImg.classList.add("images-item")
-
-// elementLi.append(elementImg)
-// playsToAdd.append(elementLi)
-// console.log(elementLi);
+console.log(gallery);
 
 
-// const playsToAdd = document.querySelector(".gallery");
+const book = {
+  title: "The Last Kingdom",
+  author: "Bernard Cornwell",
+  genres: ["historical prose", "adventure"],
+  public: true,
+  rating: 8.38,
+};
 
-// const a = [];
-// const b = [];
-// function createElement(attributes) { 
-//   images.map(img => (a.push(img.url)))
-//   images.map(img => (b.push(img.alt)))
-// }
-// createElement (images)
-
-// console.log(b);
-
-
-
+console.log(book);
