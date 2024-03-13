@@ -19,6 +19,6 @@ const massiveLi = document.querySelectorAll("li");
 
 for (const element of massiveLi) { 
     if (!element.classList.contains("item")) {
-        element.classList.add("noitem")
+        element.classList.add("item", "common")
     }
 }

@@ -14,4 +14,8 @@ function welcomeName(event) {
   output.textContent = name;
 } 
 
+// Decoration
+
+input.classList.add("common")
+
 

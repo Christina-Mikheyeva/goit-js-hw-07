@@ -23,8 +23,7 @@ function submitAction(event) {
 }
 
 
+// Decoration
 
-
-    
-
-
+const button = document.querySelector("button");
+button.textContent = "Log in"

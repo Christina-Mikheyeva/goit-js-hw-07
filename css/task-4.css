@@ -1,0 +1,18 @@
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input:last-child {
+    margin-bottom: 16px;
+}
+
+button:hover {
+    background-color: rgba(108, 140, 255, 1);
+}
+
+input:hover {
+    border: 1px solid rgba(0, 0, 0, 1);
+}
