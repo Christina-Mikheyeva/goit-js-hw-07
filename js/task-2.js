@@ -29,42 +29,20 @@ const images = [
   },
 ];
 
-// const playsToAddLi = document.querySelector(".gallery");
+const playsToAddLi = document.querySelector(".gallery");
 
-// playsToAddLi.innerHTML = "<li><img></img></li><li><img></img></li><li><img></img></li>";
+playsToAddLi.innerHTML = "<li class = li-item><img></img><li class = li-item><img></img><li class = li-item><img></img>";
 
-// const elementImg = document.querySelectorAll("img");
+const elementImg = document.querySelectorAll("img");
 
-// function addImages (arr) { 
+function addImages (arr) { 
 
-//   for (let index = 0; index < 3; index++) { 
-//     elementImg[index].classList.add("images-item"),
-//     elementImg[index].width = "320",
-//     elementImg[index].src = images[index].url,
-//     elementImg[index].alt = images[index].alt
-//   } 
-// }
+  for (let index = 0; index < 3; index++) { 
+    elementImg[index].classList.add("images-item"),
+    elementImg[index].src = images[index].url,
+    elementImg[index].alt = images[index].alt,
+    elementImg[index].width = "320"
+  } 
+}
 
-// addImages (elementImg)
-  
-
-// Object
-
-const gallery = {
-  search: document.querySelector(".gallery"),
-  addToHtml:
-
-};
-
-console.log(gallery);
-
-
-const book = {
-  title: "The Last Kingdom",
-  author: "Bernard Cornwell",
-  genres: ["historical prose", "adventure"],
-  public: true,
-  rating: 8.38,
-};
-
-console.log(book);
+addImages (elementImg)
