@@ -1,5 +1,10 @@
 .widget {
-    padding: 16px;
+    width: 169px;
+    margin-bottom: 16px;
     margin-right: auto;
     margin-left: auto;
 }
+    
+ p {
+    color:rgba(46, 47, 66, 1)
+ }   
