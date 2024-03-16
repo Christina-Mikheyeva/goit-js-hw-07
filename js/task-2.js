@@ -31,18 +31,14 @@ const images = [
 
 const playsToAddLi = document.querySelector(".gallery");
 
-playsToAddLi.innerHTML = "<li class = li-item><img></img><li class = li-item><img></img><li class = li-item><img></img>";
+playsToAddLi.insertAdjacentHTML ("beforeend", createMarkup(images))
 
-const elementImg = document.querySelectorAll("img");
-
-function addImages (arr) { 
-
-  for (let index = 0; index < 3; index++) { 
-    elementImg[index].classList.add("images-item"),
-    elementImg[index].src = images[index].url,
-    elementImg[index].alt = images[index].alt,
-    elementImg[index].width = "320"
-  } 
+function createMarkup(arr) {
+  return arr
+    .map(({ url, alt }) => 
+    `<li class = li-item>
+    <img src = "${url}", alt = "${alt}", width = "320">
+    </li>
+    `)
+  .join("")
 }
-
-addImages (elementImg)
