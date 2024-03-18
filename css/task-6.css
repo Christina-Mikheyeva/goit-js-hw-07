@@ -3,11 +3,6 @@ input {
     border-radius: 8x;
 }
 
-#controls, #boxes {
-background-color: rgba(246, 246, 254, 1);
-}
-
-
 .new-div {
     display: inline-block;
     margin: 10px;

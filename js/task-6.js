@@ -21,33 +21,28 @@ function createBoxes(amount) {
     for (let index = 0; index < amount; index++) {
       const newElement = document.createElement("div");
       newElement.classList.add("new-div")
-      newElement.style.width = `${step} px`
-      newElement.style.height = `${step} px`
+      newElement.style.width = `${step}px`
+      newElement.style.height = `${step}px`
       newElement.style.backgroundColor = getRandomHexColor()
       playsToAdd.appendChild(newElement)
-      step = +10
+      step +=10
     }
   }
 }
 
-function destroyBoxes() {
-  playsToAdd.innerHTML = ""
-}
+destroy.addEventListener("click", () => { playsToAdd.innerHTML = ""});
 
 create.addEventListener("click", () => {
-  const amount = parseInt(input.value)
+  const amount = input.value
   createBoxes(amount)
-  input.value = ''
 });
-
-destroy.addEventListener("click", destroyBoxes);
 
 // Decoration
 
 const div = document.querySelector("#controls");
 div.style.display = "flex";
 div.style.gap = "10px";
-div.style.backgroundColor = "rgba (246, 246, 254, 1)";
+div.style.backgroundColor = "rgba(246, 246, 254, 1)";
 div.style.borderRadius = "8px";
 div.style.padding = "32px";
 div.style.marginBottom = "16px";
