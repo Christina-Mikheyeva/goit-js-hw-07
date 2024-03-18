@@ -37,7 +37,7 @@ function createMarkup(arr) {
   return arr
     .map(({ url, alt }) => 
     `<li class = li-item>
-    <img src = "${url}", alt = "${alt}", width = "320">
+    <img src = "${url}" alt = "${alt}" width = "320">
     </li>
     `)
   .join("")
