@@ -10,7 +10,7 @@ function submitAction(event) {
     const clientPassword = password.value.trim();
 
     if ( clientEmail === "" || clientPassword === "") {
-    alert ('All form fields must be filled in')
+      return alert ('All form fields must be filled in')
     }
 
     const form = {
